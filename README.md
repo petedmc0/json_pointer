@@ -4,7 +4,7 @@ A simple library for creating and using json-pointer (See [rfc6901](https://tool
 
 ## Examples
 
-```
+```Dart
   // Json Pointer Manipulation
   compose(['one', 'two']); // '/one/two'
   split('/one/two'); // ['one', 'two']
@@ -28,7 +28,7 @@ A simple library for creating and using json-pointer (See [rfc6901](https://tool
 
 ## Escaping Examples
 
-```
+```Dart
   // Compose escapes parts
   compose(['one/two', 'three']); // '/one~1two/three'
 
@@ -43,7 +43,7 @@ A simple library for creating and using json-pointer (See [rfc6901](https://tool
 
 The library is only able to traverse through objects of type `Map` and `List`.  Functions will generally throw `BadRouteError` when attempting to traverse other types.  `contains` will return false.
 
-```
+```Dart
 class Point {
   Point(this.x, this.y);
   int x;
