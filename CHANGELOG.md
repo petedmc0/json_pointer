@@ -9,3 +9,7 @@ Documentation and project fomatting changes
 ## 0.0.2
 
 Documentation updates
+
+## 0.1.0
+
+Documentation updates
