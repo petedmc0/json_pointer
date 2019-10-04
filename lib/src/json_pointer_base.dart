@@ -39,7 +39,7 @@ String parent(String pointer) {
 /// ```
 /// last('/one/two/three') == 'three'
 /// ```
-String last(String pointer){
+String last(String pointer) {
   _validate(pointer);
   if (pointer == "") {
     return null;
