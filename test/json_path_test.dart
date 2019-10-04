@@ -148,6 +148,21 @@ void main() {
       expect(jp.isValid('0/foo'), false);
     });
 
+    test('last 1', () {
+      expect(jp.last('/a/b/~01~10c/~1~010'), "/~10");
+    });
+
+    test('last 2', () {
+      expect(jp.last(''), null);
+    });
+
+    test('last 3', () {
+      expect(jp.last('/foo'), 'foo');
+    });
+
+    test('last 4', () {
+      expect(jp.last('/one/two/three/four'), 'four');
+    });
 
 
 

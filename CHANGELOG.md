@@ -13,3 +13,7 @@ Documentation updates
 ## 0.1.0
 
 Documentation updates
+
+## 0.1.1
+
+Added 'last' function.

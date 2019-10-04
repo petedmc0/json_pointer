@@ -9,7 +9,8 @@ A simple library for creating and using json-pointer (See [rfc6901](https://tool
   compose(['one', 'two']); // '/one/two'
   split('/one/two'); // ['one', 'two']
   parent('/one/two'); // '/one'
-  append('/one', 'two'); // '/one/two'
+  last('/one/two/three'); // 'three'
+  append('/one/two', 'three'); // '/one/two/three'
   isValid('/one/two'); // true
 
   // Json Pointer Part manipulation
@@ -34,6 +35,9 @@ A simple library for creating and using json-pointer (See [rfc6901](https://tool
 
   // Append escapes the added part
   append('/one', 'two/three'); // '/one/two~1three'
+
+  // Last unescapes the returned part
+  last('/one/two~1three'); // 'two/three'
 
   // Split unescapes parts
   split('/one~1two/three'); // ['one/two', 'three']

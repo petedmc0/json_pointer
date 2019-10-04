@@ -1,7 +1,7 @@
 name: json_pointer
 description: A simple library for creating and using json-pointer (See [rfc6901:https://tools.ietf.org/html/rfc6901]).
 author: 'Pete <petedmc0@gmail.com>'
-version: '0.1.0'
+version: '0.1.1'
 homepage: 'https://github.com/petedmc0/json_pointer'
 
 environment:

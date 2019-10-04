@@ -18,6 +18,8 @@ main() {
   parent('/one'); // ''
   parent(''); // null
 
+  last('/one/two/three'); // 'three'
+
   append('/one', 'two'); // '/one/two'
   append('/one', '~');   // '/one/~0'  append escapes the appended item 
 

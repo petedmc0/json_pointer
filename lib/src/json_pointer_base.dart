@@ -35,6 +35,20 @@ String parent(String pointer) {
   }
 }
 
+/// Returns the last part of [pointer].  Returns null if [pointer] == ""
+/// ```
+/// last('/one/two/three') == 'three'
+/// ```
+String last(String pointer){
+  _validate(pointer);
+  if (pointer == "") {
+    return null;
+  } else {
+    var i = pointer.lastIndexOf("/");
+    return unescape(pointer.substring(i + 1));
+  }
+}
+
 /// Appends a single [part] onto the pointer.  The part is escaped before adding.
 /// ```
 /// append('/one/two', 'three') == '/one/two/three'
